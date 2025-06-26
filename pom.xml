@@ -199,6 +199,7 @@
         <module>qdata-module-ds</module>
         <module>qdata-api-ds</module>
         <module>qdata-etl</module>
+        <module>qdata-module-dso</module>
     </modules>
     <packaging>pom</packaging>
 

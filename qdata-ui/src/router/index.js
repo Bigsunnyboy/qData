@@ -30,6 +30,9 @@ import dpDataElemRouter from './dp/dataElem/index.js';
 import daDiscoveryRouter from './da/discovery/index.js';
 import deeEtlRouter from './dpp/etl/index.js';
 
+import dsoPublicRouter from './dso/public/index.js';
+import dsoDynamicRouter from './dso/dynamic/index.js';
+
 /* 数据规划动态路由 */
 // 用来存储当前请求的取消源
 // let currentCancelSource = null;
@@ -63,7 +66,8 @@ export const constantRoutes = [
     ...dpPublicRouter,
     ...dsPublicRouter,
     ...deeEtlRouter,
-    ...daPublicRouter
+    ...daPublicRouter,
+    ...dsoPublicRouter,
 ];
 
 // 动态路由，基于用户权限动态去加载
@@ -72,7 +76,9 @@ export const dynamicRoutes = [
     ...exampleDynamicRouter,
     ...daDynamicRouter,
     ...dsDynamicRouter,
-    ...dpDataElemRouter
+    ...dpDataElemRouter,
+    ...daDiscoveryRouter,
+    ...dsoDynamicRouter,
 ];
 
 const router = createRouter({

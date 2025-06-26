@@ -156,3 +156,11 @@ ds:
     main_jar: file:/dolphinscheduler/default/resources/spark-jar/qdata-etl-3.8.8.jar
     #jar main入口
     main_class: tech.qiantong.qdata.spark.etl.EtlApplication
+
+# 运维平台 DataSophon 配置
+ddp:
+  api:
+    url: http://localhost:8080/api/v1
+  ui:
+    url: http://localhost:8080
+
